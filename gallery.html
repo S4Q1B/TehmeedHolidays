@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Stylesheets/style.css">
+    <link rel="stylesheet" href="/Stylesheets/gallery.css">
+    <title>Tehmeed Holidays | Gallery</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+          <!-- Logo -->
+          <div class="logo">
+            <h1>Logo</h1>
+          </div>
+          
+          <!-- Navigation Links and Contact Button -->
+          <nav>
+            <div class="nav-links">
+                <a href="/index.html" >Home</a>
+                <a href="/gallery.html" class="active">Gallery</a>
+                <a href="/about.html">About</a>
+                <div class="one">
+                    <a href="/contact.html" class="contact-button">Contact</a>
+                </div>
+            </div>
+            <button class="hamburger" aria-label="Open Menu">&#9776;</button>
+          </nav>
+        </div>
+      
+        <!-- Fullscreen Menu Overlay -->
+        <div class="menu-overlay">
+          <button class="close-btn" aria-label="Close Menu">&times;</button>
+          <div class="overlay-links">
+              <a href="/index.html" >Home</a>
+              <a href="/gallery.html" class="active">Gallery</a>
+              <a href="/about.html">About Us</a>
+              <a href="/contact.html" class="overlay-contact">Contact Us</a>
+          </div>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="gallery-header">
+            <h1>Our Stunning Gallery</h1>
+            <p>Explore a curated collection of breathtaking moments and scenic views, capturing the beauty and experiences we offer. Let these images inspire your next adventure with us.</p>
+        </div>
+        <div class="gallery">
+            <img src="/media/img1.jpg" alt="" loading="lazy"><img src="/media/img2.jpg" alt="" loading="lazy"><img src="/media/img3.jpg" alt="" loading="lazy"><img src="/media/img4.jpg" alt="" loading="lazy"><img src="/media/img5.jpg" alt="" loading="lazy"><img src="/media/img6.jpg" alt="" loading="lazy"><img src="/media/img7.jpg" alt="" loading="lazy"><img src="/media/img8.jpg" alt="" loading="lazy"><img src="/media/img9.jpg" alt="" loading="lazy"><img src="/media/img10.jpg" alt="" loading="lazy"><img src="/media/img11.jpg" alt="" loading="lazy"><img src="/media/img12.jpg" alt="" loading="lazy"><img src="/media/img13.jpg" alt="" loading="lazy"><img src="/media/img14.jpg" alt="" loading="lazy"><img src="/media/img15.jpg" alt="" loading="lazy">
+        </div>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-upper">
+                <div class="left">
+                    <div class="footer-section info">
+                        <h4>Tehmeed Holidays</h4>
+                        <p>We are a travel agency, Based in Jammu and Kashmir India. Working worldwide</p>
+                    </div>
+                </div>
+                
+                <div class="right">
+                    <div class="footer-section">
+                        <h4>Business</h4>
+                        <p><a href="mailto:tehmeedholidays.com">Mail Us</a></p>
+                        <p><a href="/contact.html">Call Us</a></p>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Address</h4>
+                        <address>
+                            Lal Chowk, <br>
+                            Srinagar <br>
+                            J&K India
+                        </address>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Social</h4>
+                        <p><a href="#">Instagram</a></p>
+                        <p><a href="#">Facebook</a></p>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Menu</h4>
+                        <p><a href="#">Home</a></p>
+                        <p><a href="#">Gallery</a></p>
+                        <p><a href="#">About</a></p>
+                        <p><a href="#">Contact</a></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-lower">
+                <div>Tehmeedholidays.com</div>
+                <div>Copyright © 2024. All rights reserved</div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    // JavaScript for handling the menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const menuOverlay = document.querySelector('.menu-overlay');
+    const closeBtn = document.querySelector('.close-btn');
+    const body = document.body;
+
+    // Open menu and prevent body scroll
+    hamburger.addEventListener('click', () => {
+    menuOverlay.classList.add('active');
+    body.classList.add('no-scroll'); // Prevent body scroll
+    });
+
+    // Close menu and restore body scroll
+    closeBtn.addEventListener('click', () => {
+    menuOverlay.classList.remove('active');
+    body.classList.remove('no-scroll'); // Allow body scroll
+    });
+
+</script>
+</html>
+

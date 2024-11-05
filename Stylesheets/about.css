@@ -1,0 +1,172 @@
+/* About section styling */
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    padding: 5vw;
+    gap: 5vw;
+  }
+  
+  .about-header {
+        
+    text-align: center;
+
+    & h1 {
+        font-size: 2em;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+
+    & p {
+        font-size: 1em;
+        color: #555;
+        width: clamp(250px, 90vw, 600px);
+        margin: 0 auto;
+        line-height: 1.6;
+        text-wrap: balance;
+        padding: 0 40px;
+    }
+}
+  
+  .about-header h1 {
+    font-size: 2em;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  
+  .about-header p {
+    font-size: 1em;
+    color: #555;
+    width: clamp(250px, 90vw, 660px);
+    margin: 0 auto;
+    line-height: 1.6;
+    text-wrap: balance;
+    padding: 0 40px;
+
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  
+  .about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease;
+  }
+  
+  .about-image img:hover {
+    transform: scale(1.05);
+  }
+  
+  .about-text {
+    max-width: 700px;
+    padding: 0 20px;
+  }
+  
+  .about-text h2 {
+    font-size: 2em;
+    color: #000000;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 5px;
+  }
+  
+  .about-text h2::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #3498db;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.4s ease;
+  }
+  
+  .about-text h2:hover::after {
+    width: 80px;
+  }
+  
+  .about-text p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 50px;
+  }
+  
+  .about-text ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .about-text ul li {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 12px;
+  }
+  
+  /* Achievements Section */
+  .achievements-section {
+    text-align: center;
+  }
+  
+  .achievements-section h2 {
+    font-size: 2.5em;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+  
+  .achievements-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    background-color: #000000;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  .card h3 {
+    font-size: 2em;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 1.1em;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  
+  /* Responsive Layout */
+  @media (min-width: 768px) {
+    .about-content {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  
+    .about-image {
+      flex: 1;
+    }
+  
+    .about-text {
+      flex: 1;
+    }
+  }
+
+  
